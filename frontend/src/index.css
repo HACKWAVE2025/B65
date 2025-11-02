@@ -4,13 +4,17 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-br from-slate-50 to-cyan-50 min-h-screen;
+    @apply min-h-screen;
+    background: linear-gradient(135deg, #e0f2f7 0%, #b3e5f0 25%, #d1f2eb 50%, #e8f5f3 75%, #f0f9fa 100%);
+    background-attachment: fixed;
   }
 }
 
 @layer components {
   .card {
-    @apply bg-white rounded-xl shadow-lg p-6 border border-gray-100;
+    @apply rounded-xl shadow-lg p-6 border;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f9fa 100%);
+    border-color: #b3dfe6;
   }
 
   .btn-primary {
@@ -37,7 +41,9 @@
   }
 
   .section-card {
-    @apply bg-gradient-to-br from-white to-gray-50 rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200;
+    @apply rounded-xl p-6 border shadow-sm hover:shadow-md transition-all duration-200;
+    background: linear-gradient(135deg, #f0f9fa 0%, #e6f7f9 50%, #ffffff 100%);
+    border-color: #b3dfe6;
   }
 }
 
@@ -78,6 +84,7 @@
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     opacity: 1;
@@ -98,19 +105,23 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }

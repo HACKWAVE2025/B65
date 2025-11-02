@@ -23,9 +23,12 @@ function LandingPage() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-teal-50">
+        <div className="min-h-screen">
             {/* Navigation */}
-            <nav className="bg-white shadow-sm sticky top-0 z-40">
+            <nav className="shadow-sm sticky top-0 z-40" style={{
+                background: 'linear-gradient(135deg, #ffffff 0%, #e6f7f9 100%)',
+                borderBottom: '2px solid #b3dfe6'
+            }}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
                         <div className="flex items-center gap-2">
@@ -84,24 +87,27 @@ function LandingPage() {
                         </div>
 
                         {/* Quick Stats */}
-                        <div className="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200">
-                            <div>
+                        <div className="grid grid-cols-3 gap-6 pt-8 border-t-2" style={{ borderColor: '#b3dfe6' }}>
+                            <div className="p-4 rounded-lg" style={{ backgroundColor: '#e6f7f9' }}>
                                 <div className="text-3xl font-bold mb-1" style={{ color: '#0A5569' }}>12+</div>
-                                <div className="text-sm text-gray-600">Languages</div>
+                                <div className="text-sm font-medium" style={{ color: '#0A5569' }}>Languages</div>
                             </div>
-                            <div>
+                            <div className="p-4 rounded-lg" style={{ backgroundColor: '#f0f9fa' }}>
                                 <div className="text-3xl font-bold mb-1" style={{ color: '#0A5569' }}>5</div>
-                                <div className="text-sm text-gray-600">Data Sources</div>
+                                <div className="text-sm font-medium" style={{ color: '#0A5569' }}>Data Sources</div>
                             </div>
-                            <div>
+                            <div className="p-4 rounded-lg" style={{ backgroundColor: '#e6f7f9' }}>
                                 <div className="text-3xl font-bold mb-1" style={{ color: '#0A5569' }}>∞</div>
-                                <div className="text-sm text-gray-600">Possibilities</div>
+                                <div className="text-sm font-medium" style={{ color: '#0A5569' }}>Possibilities</div>
                             </div>
                         </div>
                     </div>
 
                     <div className="relative">
-                        <div className="bg-white rounded-2xl shadow-2xl p-8 border" style={{ borderColor: '#b3dfe6' }}>
+                        <div className="rounded-2xl shadow-2xl p-8 border-2" style={{
+                            background: 'linear-gradient(135deg, #ffffff 0%, #e6f7f9 100%)',
+                            borderColor: '#0A5569'
+                        }}>
                             <div className="space-y-4">
                                 <div className="flex items-start gap-3 p-4 rounded-lg" style={{ backgroundColor: '#e6f7f9' }}>
                                     <BookOpen className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#0A5569' }} />
@@ -133,7 +139,9 @@ function LandingPage() {
             </section>
 
             {/* What Makes Us Different */}
-            <section className="bg-white py-20">
+            <section className="py-20" style={{
+                background: 'linear-gradient(135deg, #e6f7f9 0%, #f0f9fa 50%, #e6f7f9 100%)'
+            }}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold mb-4" style={{ color: '#0A5569' }}>
@@ -190,19 +198,24 @@ function LandingPage() {
             </section>
 
             {/* How It Works */}
-            <section className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+            <section className="py-20" style={{
+                background: 'linear-gradient(135deg, #d1f2eb 0%, #b3e5f0 50%, #e0f2f7 100%)'
+            }}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold mb-4" style={{ color: '#0A5569' }}>
                             Three Simple Steps
                         </h2>
-                        <p className="text-xl text-gray-600">
+                        <p className="text-xl font-semibold" style={{ color: '#0A5569' }}>
                             From confusion to clarity in seconds
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className="bg-white rounded-xl p-8 shadow-lg">
+                        <div className="rounded-xl p-8 shadow-lg border-2" style={{
+                            background: 'linear-gradient(135deg, #ffffff 0%, #e6f7f9 100%)',
+                            borderColor: '#0A5569'
+                        }}>
                             <div className="w-12 h-12 rounded-full flex items-center justify-center mb-6 text-white text-xl font-bold" style={{ backgroundColor: '#0A5569' }}>
                                 1
                             </div>
@@ -224,7 +237,10 @@ function LandingPage() {
                             </p>
                         </div>
 
-                        <div className="bg-white rounded-xl p-8 shadow-lg">
+                        <div className="rounded-xl p-8 shadow-lg border-2" style={{
+                            background: 'linear-gradient(135deg, #ffffff 0%, #e6f7f9 100%)',
+                            borderColor: '#0A5569'
+                        }}>
                             <div className="w-12 h-12 rounded-full flex items-center justify-center mb-6 text-white text-xl font-bold" style={{ backgroundColor: '#0A5569' }}>
                                 3
                             </div>
@@ -239,18 +255,23 @@ function LandingPage() {
             </section>
 
             {/* Real Example */}
-            <section className="bg-white py-20">
+            <section className="py-20" style={{
+                background: 'linear-gradient(135deg, #e6f7f9 0%, #d1f2eb 50%, #b3e5f0 100%)'
+            }}>
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-bold mb-4" style={{ color: '#0A5569' }}>
                             See It In Action
                         </h2>
-                        <p className="text-xl text-gray-600">
+                        <p className="text-xl font-semibold" style={{ color: '#0A5569' }}>
                             Here's what you get when you analyze a haiku
                         </p>
                     </div>
 
-                    <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 border-2" style={{ borderColor: '#b3dfe6' }}>
+                    <div className="rounded-2xl p-8 border-2 shadow-xl" style={{
+                        background: 'linear-gradient(135deg, #ffffff 0%, #e6f7f9 100%)',
+                        borderColor: '#0A5569'
+                    }}>
                         <div className="mb-8">
                             <div className="text-sm font-semibold text-gray-500 mb-2">INPUT</div>
                             <div className="bg-white p-6 rounded-lg shadow-sm border" style={{ borderColor: '#b3dfe6' }}>
@@ -311,7 +332,9 @@ function LandingPage() {
             </section>
 
             {/* Features Breakdown */}
-            <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+            <section className="py-20" style={{
+                background: 'linear-gradient(135deg, #b3e5f0 0%, #d1f2eb 50%, #e0f2f7 100%)'
+            }}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold mb-4" style={{ color: '#0A5569' }}>
@@ -320,7 +343,10 @@ function LandingPage() {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
-                        <div className="bg-white rounded-xl p-6 shadow-lg">
+                        <div className="rounded-xl p-6 shadow-lg border-2" style={{
+                            background: 'linear-gradient(135deg, #ffffff 0%, #e6f7f9 100%)',
+                            borderColor: '#0A5569'
+                        }}>
                             <div className="flex items-start gap-4">
                                 <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#e6f7f9' }}>
                                     <BookOpen className="w-6 h-6" style={{ color: '#0A5569' }} />
@@ -334,13 +360,16 @@ function LandingPage() {
                             </div>
                         </div>
 
-                        <div className="bg-white rounded-xl p-6 shadow-lg">
+                        <div className="rounded-xl p-6 shadow-lg border-2" style={{
+                            background: 'linear-gradient(135deg, #ffffff 0%, #f0f9fa 100%)',
+                            borderColor: '#0A5569'
+                        }}>
                             <div className="flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
-                                    <Globe className="w-6 h-6 text-purple-600" />
+                                <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#e6f7f9' }}>
+                                    <Globe className="w-6 h-6" style={{ color: '#0A5569' }} />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-lg mb-2 text-purple-900">Multi-Source Verification</h3>
+                                    <h3 className="font-bold text-lg mb-2" style={{ color: '#0A5569' }}>Multi-Source Verification</h3>
                                     <p className="text-gray-600 text-sm">
                                         We cross-check facts across Wikipedia, Google Knowledge Graph, DBpedia, Wikidata, and OpenLibrary.
                                     </p>
@@ -348,13 +377,16 @@ function LandingPage() {
                             </div>
                         </div>
 
-                        <div className="bg-white rounded-xl p-6 shadow-lg">
+                        <div className="rounded-xl p-6 shadow-lg border-2" style={{
+                            background: 'linear-gradient(135deg, #ffffff 0%, #e6f7f9 100%)',
+                            borderColor: '#0A5569'
+                        }}>
                             <div className="flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
-                                    <Languages className="w-6 h-6 text-green-600" />
+                                <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#e6f7f9' }}>
+                                    <Languages className="w-6 h-6" style={{ color: '#0A5569' }} />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-lg mb-2 text-green-900">Audio Explanations</h3>
+                                    <h3 className="font-bold text-lg mb-2" style={{ color: '#0A5569' }}>Audio Explanations</h3>
                                     <p className="text-gray-600 text-sm">
                                         Listen to explanations read aloud in your chosen language. Perfect for auditory learners.
                                     </p>
@@ -362,13 +394,16 @@ function LandingPage() {
                             </div>
                         </div>
 
-                        <div className="bg-white rounded-xl p-6 shadow-lg">
+                        <div className="rounded-xl p-6 shadow-lg border-2" style={{
+                            background: 'linear-gradient(135deg, #ffffff 0%, #f0f9fa 100%)',
+                            borderColor: '#0A5569'
+                        }}>
                             <div className="flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-lg bg-pink-100 flex items-center justify-center flex-shrink-0">
-                                    <Sparkles className="w-6 h-6 text-pink-600" />
+                                <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#e6f7f9' }}>
+                                    <Sparkles className="w-6 h-6" style={{ color: '#0A5569' }} />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-lg mb-2 text-pink-900">Entity Highlighting</h3>
+                                    <h3 className="font-bold text-lg mb-2" style={{ color: '#0A5569' }}>Entity Highlighting</h3>
                                     <p className="text-gray-600 text-sm">
                                         Important cultural terms are highlighted. Hover to see instant Wikipedia definitions and context.
                                     </p>
@@ -380,7 +415,9 @@ function LandingPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="bg-gradient-to-r from-teal-600 to-blue-700 py-20">
+            <section className="py-20" style={{
+                background: 'linear-gradient(135deg, #0A5569 0%, #0d6b82 50%, #0f7e9a 100%)'
+            }}>
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                         Ready to Unlock Cultural Wisdom?
